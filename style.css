@@ -1,0 +1,64 @@
+/* 
+- Spacing System 
+    4 / 8 / 12 / 16 / 20 / 24 / 28 / 32 / 36 / 40 / 44 / 48 /  
+
+*/
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  --ff: "Outfit", san-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+html {
+  /* default browser font-size is 16px. if 1rem = 10px, then 10px of 16px is 10/16 = 62.5% */
+  font-size: 62.5%;
+  font-family: var(--ff);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--light-gray);
+}
+
+.container {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-component-card {
+  width: 25rem;
+  padding: 1.6rem;
+  background-color: var(--white);
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset;
+  gap: 0.8rem;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
