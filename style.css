@@ -10,7 +10,7 @@
   --grayish-blue: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
 
-  --ff: "Outfit", san-serif;
+  --ff-base: "Outfit", san-serif;
 
   --fw-regular: 400;
   --fw-bold: 700;
@@ -25,25 +25,26 @@
 html {
   /* default browser font-size is 16px. if 1rem = 10px, then 10px of 16px is 10/16 = 62.5% */
   font-size: 62.5%;
-  font-family: var(--ff);
+  font-family: var(--ff-base);
 }
 
 body {
-  height: 100vh;
   background-color: var(--light-gray);
 }
 
 .container {
-  height: 100%;
+  min-height: 100vh;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin: 0 1.6rem;
 }
 
 .qr-component-card {
-  width: 25rem;
+  max-width: 30rem;
+  height: 100%;
   padding: 1.6rem;
   background-color: var(--white);
   border-radius: 12px;
@@ -54,17 +55,23 @@ body {
   gap: 0.8rem;
 }
 
-.heading {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.description {
-  font-size: 1.6rem;
-  text-align: center;
-}
-
 img {
   width: 100%;
   border-radius: 8px;
+}
+
+.content {
+  padding: 1rem 1.2rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark-blue);
+}
+
+.description {
+  font-size: 1.4rem;
+  color: var(--grayish-blue);
 }
