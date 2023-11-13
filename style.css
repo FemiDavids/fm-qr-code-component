@@ -16,6 +16,12 @@
   --fw-bold: 700;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   /* default browser font-size is 16px. if 1rem = 10px, then 10px of 16px is 10/16 = 62.5% */
   font-size: 62.5%;
